@@ -1,0 +1,7 @@
+{
+    "editor.defaultFormatter": "HookyQR.beautify",
+    "editor.formatOnSave": true,
+    "[vue]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    }
+}
