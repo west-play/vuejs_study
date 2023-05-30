@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>v-for</title>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="i in arr">{{ i.text }}</li>
+        </ul>
+    </div>
+    <br>
+
+
+
+
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                arr: [
+                    { text: '반복문 1' },
+                    { text: '반복문 2' },
+                    { text: '반복문 3' }
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
