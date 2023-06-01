@@ -3,14 +3,14 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["plugin:prettier/recommended"],
-  "overrides": [],
-  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended", "plugin:vue/essential"],
   "parserOptions": {
-    "ecmaVersion": "latest",
+    "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["vue", "@typescript-eslint"],
-  "rules": {},
-  "eslint.workingDirectories": [{ "mode": "auto" }]
+  "plugins": ["vue"],
+  "rules": {
+    "semi": ["error", "always"],
+    "quotes": ["error", "double"]
+  }
 }
